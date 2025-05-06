@@ -32,7 +32,7 @@ def extract_features_parallel(file_path):
 # Main code execution wrapped in a function
 def main():
     # Dataset Path (Update with actual path)
-    DATASET_PATH = r"D:\SER\text_emotion\archive (1)"
+    DATASET_PATH = r"D:\SER\archive (1)"
 
     # Emotion labels based on RAVDESS filenames
     emotion_map = {
@@ -119,7 +119,7 @@ def main():
 if __name__ == '__main__':
     main()
     # Optional: Test a known angry file from RAVDESS
-    test_file = r"D:\SER\text_emotion\archive (1)\Actor_11\03-01-02-02-02-01-11.wav"
+    test_file = r"d:\SER\archive (1)\Actor_11\03-01-02-02-02-01-11.wav"
 
     # Load label encoder and scaler (already saved earlier)
     label_encoder = joblib.load('label_encoder.pkl')

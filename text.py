@@ -30,9 +30,9 @@ logging.info("NLTK resources downloaded successfully!")
 # Load the datasets
 logging.info("Loading datasets...")
 file_paths = [
-    r"D:\text_emotion - Copy - Copy\text_emotion\archive\goemotions_1.csv",
-    r"D:\text_emotion - Copy - Copy\text_emotion\archive\goemotions_2.csv",
-    r"D:\text_emotion - Copy - Copy\text_emotion\archive\goemotions_3.csv"
+    r"D:\SER\archive\goemotions_1.csv",
+    r"D:\SER\archive\goemotions_2.csv",
+    r"D:\SER\archive\goemotions_3.csv"
 ]
 
 try:
@@ -155,8 +155,8 @@ print(f"\n⏳ Total Runtime: {total_time:.2f} seconds")
 import joblib
 import os
 
-# Save models to D:\text_emotion - Copy - Copy
-save_dir = r"D:\text_emotion - Copy - Copy"
+
+save_dir = "D:\SER"
 os.makedirs(save_dir, exist_ok=True)
 
 # Save Logistic Regression model

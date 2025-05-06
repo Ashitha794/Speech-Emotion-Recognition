@@ -15,10 +15,10 @@ import pickle
 def load_models():
     log_model = joblib.load(r"D:\SER\logistic_text_emotion.pkl")
     xgb_model = joblib.load(r"D:\SER\xgb_speech_emotion.pkl")
-    vectorizer = joblib.load(r"D:\SER\text_emotion\tfidf_vectorizer.pkl")
-    scaler = joblib.load(r"D:\SER\text_emotion\scaler.pkl")
+    vectorizer = joblib.load(r"D:\SER\tfidf_vectorizer.pkl")
+    scaler = joblib.load(r"D:\SER\scaler.pkl")
     label_encoder_text = joblib.load(r"D:\SER\label_encoder_logistic.pkl")
-    label_encoder_speech = joblib.load(r"D:\SER\text_emotion\label_encoder.pkl")
+    label_encoder_speech = joblib.load(r"D:\SER\label_encoder.pkl")
     return log_model, xgb_model, vectorizer, scaler, label_encoder_text, label_encoder_speech
 
 log_model, xgb_model, vectorizer, scaler, label_encoder_text, label_encoder_speech = load_models()
